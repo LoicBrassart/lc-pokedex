@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 
 type Props = {
   id: number;
@@ -28,7 +29,7 @@ export default function Pokemon({ id }: Props) {
     <li>
       {/* On peut utiliser nos props ou les données de l'api */}
       <h2>
-        #{id} - {pokemonData.name}
+        #{id} - <Link to={`/favpoke/${id}`}>{pokemonData.name}</Link>
       </h2>
       {/* On peut aller chercher des champs profondement enfouis dans notre api */}
       <img src={pokemonData.sprites.front_shiny} alt={pokemonData.name} />
