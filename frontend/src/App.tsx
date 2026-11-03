@@ -1,6 +1,7 @@
 import { Link, Route, Routes } from "react-router";
 import Pokedex from "./components/Pokedex";
 import FavoritePokemon from "./components/FavoritePokemon";
+import Searchbar from "./components/Searchbar";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Link to="/favpoke/25">My favorite Pokemon</Link>
           </li>
         </ul>
+        <Searchbar />
       </nav>
       <Routes>
         <Route path="/" element={<p>J'suis un super site sur les pokemon</p>} />

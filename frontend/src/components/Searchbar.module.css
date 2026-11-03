@@ -1,0 +1,11 @@
+.searchbar {
+  position: relative;
+}
+.searchInput {
+  background-color: aquamarine;
+}
+.results {
+  background-color: aqua;
+  position: absolute;
+  top: 100%;
+}
