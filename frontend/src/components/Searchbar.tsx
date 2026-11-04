@@ -13,7 +13,10 @@ export default function Searchbar() {
   return (
     <div className={styles.searchbar}>
       <input
-        className={styles.searchInput}
+        className={`
+          ${styles.searchInput} 
+          ${needle && styles.hasResults}
+        `}
         type="search"
         value={needle}
         onChange={hChange}

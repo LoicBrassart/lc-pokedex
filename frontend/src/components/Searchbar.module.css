@@ -1,11 +1,26 @@
 .searchbar {
   position: relative;
+  width: 15rem;
+}
+.searchbar > * {
+  width: 100%;
 }
 .searchInput {
-  background-color: aquamarine;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 .results {
-  background-color: aqua;
   position: absolute;
   top: 100%;
+  width: calc(100% - 2px);
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+.results > * {
+  padding: 0.5rem;
+}
+.hasResults {
+  border-radius: 1rem 1rem 0rem 0rem;
 }
